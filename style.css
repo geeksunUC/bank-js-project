@@ -6,7 +6,8 @@ body {
     background-color: #d3d3d38f;
     font-family: Mulish;
 }
-/* /////////// header //////// */ 
+
+/* /////////// header //////// */
 header {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -57,6 +58,7 @@ header span {
     cursor: pointer;
     row-gap: 3rem;
 }
+
 /* /////////// main header ////////  */
 .main-header {
     margin: 0px 205px;
@@ -74,6 +76,7 @@ header span {
     text-align: right;
     font-size: 42px;
 }
+
 /* /////////// movement container ////////  */
 .mvt-container {
     /* border: 1px solid; */
@@ -83,9 +86,10 @@ header span {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
 }
+
 /* /////////// left and right sections ////////  */
 .left {
     width: 50%;
@@ -101,6 +105,7 @@ header span {
     /* margin-top: -18px; */
     height: 490px;
 }
+
 /* /////////// left side  ////////  */
 .deposit-container,
 .withdraw-container {
@@ -125,19 +130,20 @@ header span {
     /* font-weight: 500; */
 }
 
-.withdraw{
+.withdraw {
     border-radius: 10px;
-    background: linear-gradient(to bottom right , #e35858 , #ba3f3f);
+    background: linear-gradient(to bottom right, #e35858, #ba3f3f);
     color: azure;
     padding: 2px 10px;
     margin-right: 20px;
     margin-left: 20px;
     /* font-weight: 500; */
 }
+
 /* /////////// right side  ////////  */
 /* //////////////// transfert box //////////// */
-.transfert-box{
-    background: linear-gradient(to right bottom , #ffc107 , #ff9800);
+.transfert-box {
+    background: linear-gradient(to right bottom, #ffc107, #ff9800);
     border-radius: 10px;
     height: 140px;
     padding-top: 10px;
@@ -145,15 +151,17 @@ header span {
     position: relative;
 }
 
-.transfert-box h3{
-    padding-left: 40px;  
+.transfert-box h3 {
+    padding-left: 40px;
 }
 
-.transfert-input, .amount-loan-box-input, .close-input{
+.transfert-input,
+.amount-loan-box-input,
+.close-input {
     background-color: rgba(255, 255, 255, 0.349);
     border-radius: 10px;
     border: none;
-    width:30%;
+    width: 30%;
     padding: 8px 0px;
     position: absolute;
     left: 40px;
@@ -161,17 +169,18 @@ header span {
     text-align: center;
 }
 
-.transfert-to{
+.transfert-to {
     position: absolute;
     left: 70px;
     top: 95px;
 }
 
-.amout-transfert-box-input, .pin-input{
+.amout-transfert-box-input,
+.pin-input {
     background-color: rgba(255, 255, 255, 0.349);
     border-radius: 10px;
     border: none;
-    width:30%;
+    width: 30%;
     padding: 8px 0px;
     position: absolute;
     left: 200px;
@@ -179,12 +188,14 @@ header span {
     text-align: center;
 }
 
-.amount-transfert-label{
+.amount-transfert-label {
     position: absolute;
     left: 240px;
     top: 95px;
 }
-.btn-transfert-box, .btn-close-box{
+
+.btn-transfert-box,
+.btn-close-box {
     position: absolute;
     right: 30px;
     border: transparent;
@@ -193,9 +204,10 @@ header span {
     top: 60px;
     cursor: pointer;
 }
+
 /* //////////////// loan box //////////// */
-.loan-box{
-    background: linear-gradient(to right bottom , #59c45d , #48964c);
+.loan-box {
+    background: linear-gradient(to right bottom, #59c45d, #48964c);
     border-radius: 10px;
     height: 140px;
     position: relative;
@@ -203,44 +215,81 @@ header span {
     margin-bottom: 20px;
 }
 
-.loan-box h3{
-    padding-left: 40px; 
+.loan-box h3 {
+    padding-left: 40px;
 }
 
-.amount-loan-label{
+.amount-loan-label {
     position: absolute;
     left: 80px;
     top: 95px;
 }
-.btn-loan-box{
+
+.btn-loan-box {
     position: absolute;
-    left:200px;
+    left: 200px;
     border: transparent;
     border-radius: 10px;
     padding: 8px 23px;
     top: 60px;
     cursor: pointer;
 }
+
 /* //////////////// close box //////////// */
-.close-box{
-    background: linear-gradient(to right bottom , #e35858 , #ba3f3f);
+.close-box {
+    background: linear-gradient(to right bottom, #e35858, #ba3f3f);
     border-radius: 10px;
     height: 140px;
     position: relative;
     padding-top: 10px;
 }
 
-.close-box h3{
-    padding-left: 40px; 
+.close-box h3 {
+    padding-left: 40px;
 }
 
-.confirm-label{
-position: absolute;
+.confirm-label {
+    position: absolute;
     left: 60px;
     top: 95px;
 }
-.pin-label{
+
+.pin-label {
     position: absolute;
     left: 225px;
     top: 95px;
+}
+
+/* //////////////// footer //////////// */
+footer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in, .out, .interest, .sort{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.average-in, .average-interest {
+font-size: 20px;
+color: #7ed481;
+}
+
+.average-out {
+font-size: 20px;
+color: #ba3f3f;
+}
+.logout-timer {
+  font-weight: 800;
+}
+.sort{
+    position: absolute;
+    left:46%
 }

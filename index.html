@@ -23,64 +23,75 @@
         </div>
     </header>
     <!-- ///// header ///// -->
-    <!-- //// main header ///// -->
-    <section class="main-header">
-        <div class="current">
-            <h3>Current balance</h3>
-            <p>As of 10/02/2025</p>
-        </div>
-        <h1 class="amount">0000 &euro;</h1>
-    </section>
-    <!-- //// main header ///// -->
-    <!-- /////////////////// section of  movements  ////////// -->
-    <section class="mvt-container">
-        <!-- /////////////// left /////// -->
-        <section class="left">
-            <div class="deposit-container">
-                <div class="deposit-info">
-                    <span class="deposit">2 Deposit</span>
-                    <span>3 DAYS AGO</span>
-                </div>
-                <p class="deposit-amount">4000 &euro;</p>
+    <main>
+        <!-- //// main header ///// -->
+        <section class="main-header">
+            <div class="current">
+                <h3>Current balance</h3>
+                <p>As of 10/02/2025</p>
             </div>
-            <hr>
-            <div class="withdraw-container">
-                <div class="withdraw-info">
-                    <span class="withdraw">1 Withdraw</span>
-                    <span>24/01/2024</span>
+            <h1 class="amount">0000 &euro;</h1>
+        </section>
+        <!-- //// main header ///// -->
+        <!-- /////////////////// section of  movements  ////////// -->
+        <section class="mvt-container">
+            <!-- /////////////// left section/////// -->
+            <section class="left">
+                <div class="deposit-container">
+                    <div class="deposit-info">
+                        <span class="deposit">2 Deposit</span>
+                        <span>3 DAYS AGO</span>
+                    </div>
+                    <p class="deposit-amount">4000 &euro;</p>
                 </div>
-                <p class="withdraw-amount">-378 &euro;</p>
+                <hr>
+                <div class="withdraw-container">
+                    <div class="withdraw-info">
+                        <span class="withdraw">1 Withdraw</span>
+                        <span>24/01/2024</span>
+                    </div>
+                    <p class="withdraw-amount">-378 &euro;</p>
+                </div>
+                <hr>
+            </section>
+            <!-- /////////////// right section/////// -->
+            <section class="right">
+                <form class="transfert-box">
+                    <h3>Transfert money</h3>
+                    <input class="transfert-input" type="text">
+                    <label class="transfert-to" for="">Transfert to</label>
+                    <input class="amout-transfert-box-input" type="number">
+                    <label class="amount-transfert-label" for="">Amount</label>
+                    <button class="btn-transfert-box">→</button>
+                </form>
+                <form class="loan-box">
+                    <h3>Request loan</h3>
+                    <input class="amount-loan-box-input" type="number">
+                    <label class="amount-loan-label">Amount</label>
+                    <button class="btn-loan-box">→</button>
+                </form>
+                <form class="close-box">
+                    <h3>Close account</h3>
+                    <input class="close-input" type="text">
+                    <label class="confirm-label" for="">confirm user</label>
+                    <input class="pin-input" type="number">
+                    <label class="pin-label">confirm pin</label>
+                    <button class="btn-close-box">→</button>
+                </form>
+            </section>
+        </section>
+        <!-- /////////////////// section of  movements  ////////// -->
+         <!-- //////////// footer  ////////// -->
+        <footer>
+            <div class="footer-average-container">
+                <span class="in">IN <span class="average-in">0000 &euro;</span></span>
+                <span class="out">OUT <span class="average-out">0000 &euro;</span></span>
+                <span class="interest">INTEREST <span class="average-interest">0000 &euro;</span></span>
             </div>
-            <hr>
-        </section>
-        <!-- /////////////// right /////// -->
-        <section class="right">
-            <form class="transfert-box">
-                <h3>Transfert money</h3>
-                <input class="transfert-input" type="text">
-                <label class="transfert-to" for="">Transfert to</label>
-                <input class="amout-transfert-box-input" type="number">
-                <label class="amount-transfert-label" for="">Amount</label>
-                <button class="btn-transfert-box">→</button>
-            </form>
-            <form class="loan-box">
-                <h3>Request loan</h3>
-                <input class="amount-loan-box-input" type="number">
-                <label class="amount-loan-label">Amount</label>
-                <button class="btn-loan-box">→</button>
-            </form>
-            <form class="close-box">
-                <h3>Close account</h3>
-                <input class="close-input" type="text">
-                <label class="confirm-label" for="">confirm user</label>
-                <input class="pin-input" type="number">
-                <label class="pin-label">confirm pin</label>
-                <button class="btn-close-box">→</button>
-            </form>
-        </section>
-    </section>
-    <!-- /////////////////// section of  movements  ////////// -->
-
+            <p class="sort">&darr; SORT</p>
+            <p class="logout">you will be logged out in <span class="logout-timer">05:00</span></p>
+        </footer>
+    </main>
     <!-- javascript link -->
     <script src="./app.js"></script>
 </body>
