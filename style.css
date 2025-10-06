@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #d3d3d38f;
+    font-family: Mulish;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* grid-template-columns: 40% 20% 40%; */
+    grid-auto-rows: minmax(60px, auto);
+    gap: 1em;
+    /* border: 1px solid #333; */
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.logo {
+    /* border: 1px solid #8888; */
+    height: 50px;
+    width: 50px;
+    grid-column: 3;
+    align-self: self-start;
+    padding: 0px 0px
+}
+
+header h3 {
+    padding-left: 5%;
+    align-self: center;
+    /* grid-column: 1; */
+}
+
+.auth-header {
+    /* border: 1px solid #333333da; */
+    margin-right: 10px;
+    align-self: center;
+    grid-column: 4;
+
+}
+
+.auth-header input {
+    text-align: center;
+    min-width: 40%;
+    border: transparent;
+    padding: 7px;
+    border-radius: 15px;
+    ;
+    /* margin-right: 5px; */
+}
+
+header span {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    row-gap: 3rem;
+}
+
+.main-header {
+    margin: 0px 205px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    line-height: 5px;
+}
+
+.current p {
+    font-size: small;
+    color: rgb(114, 128, 153);
+}
+
+.amount {
+    text-align: right;
+    font-size: 42px;
+}
+
+.mvt-container {
+    border: 1px solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-bottom: 100px;
+
+}
+
+.left {
+    width: 50%;
+    margin-right: 10px;
+    height: 600px;
+    overflow: scroll;
+    background-color: white;
+}
+
+.right {
+    width: 50%;
+    margin-left: 20px;
+    height: 600px;
+}
+
+.deposit-container,
+.withdraw-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deposit-info,
+.withdraw-info span {
+    font-size: 13px;
+}
+
+.deposit {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #7ed481, #3ea343);
+    color: azure;
+    padding: 2px 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* font-weight: 500; */
+}
+
+.withdraw{
+    border-radius: 10px;
+    background: linear-gradient(to bottom right , #e35858 , #ba3f3f);
+    color: azure;
+    padding: 2px 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* font-weight: 500; */
+}
