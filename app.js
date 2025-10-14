@@ -33,7 +33,9 @@ const accounts = [account1, account2, account3, account4];
 //////// import elements : 
 
 const mvtsContainer = document.querySelector(".left");
+const balanceAccount = document.querySelector(".amount");
 
+/*///// Dispaly Movements ////*/
 const displayMvts = function (arr) {
     mvtsContainer.innerHTML = ""
 
@@ -55,4 +57,35 @@ const displayMvts = function (arr) {
 }
 ///// invocation , call , run :
 
-displayMvts(account2.movements)
+displayMvts(account1.movements)
+
+
+/*//// Display balanace /////*/
+
+const displayBalance = function(arr){
+    const balance = arr.reduce((acc, ele) => acc +ele, 0);
+    // update UI
+    balanceAccount.textContent = `${balance} €`;
+}
+
+///// invocation ::::
+displayBalance(account1.movements);
+
+/*//// Display Summury /////*/
+
+const calcDisplaySummury = function(){
+    
+}
+
+/*////// login part //////*/
+
+const btnLogin = document.querySelector('.auth-header>span');
+console.log(btnLogin);
+btnLogin.addEventListener('click', (e)=>{
+    e.preventDefault();
+    console.log('login clicked!');
+    // let user= document.querySelector('')
+    // accounts.forEach(element =>{
+        
+    // })
+});
