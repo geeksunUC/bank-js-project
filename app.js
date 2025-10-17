@@ -30,10 +30,28 @@ const account4 = {
 }
 
 const accounts = [account1, account2, account3, account4];
-//////// import elements : 
 
+//////// import elements ::://///
+const app = document.querySelector("main");
 const mvtsContainer = document.querySelector(".left");
 const balanceAccount = document.querySelector(".amount");
+const inComes = document.querySelector(".average-in");
+const outMoney = document.querySelector(".average-out");
+const interest = document.querySelector(".average-interest");
+/* -------Authentication emelents------- */
+const userNameInput = document.querySelector(".user");
+const pinInput = document.querySelector(".pin");
+const btnLogin = document.querySelector(".btn-login");
+const welcomeMessage = document.querySelector(".welcome");
+/* -------Transfert Box Elements------- */
+
+/* -------close  Box Elements------- */
+
+/* -------Loan Box Elements------- */
+
+/* -------Sort   Element------- */
+
+//////// End of import elements ::://///
 
 /*///// Dispaly Movements ////*/
 const displayMvts = function (arr) {
@@ -77,15 +95,29 @@ const calcDisplaySummury = function(){
     
 }
 
-/*////// login part //////*/
+/* -------Authentication Functionnality------- */
+let currentAccount;
+btnLogin.addEventListener("click", function(){
+    currentAccount = accounts.find((acc) => acc.userName === userNameInput.value);
+    console.log("current:", currentAccount);
 
-const btnLogin = document.querySelector('.auth-header>span');
-console.log(btnLogin);
-btnLogin.addEventListener('click', (e)=>{
-    e.preventDefault();
-    console.log('login clicked!');
-    // let user= document.querySelector('')
-    // accounts.forEach(element =>{
-        
-    // })
+    //// ? optional chaining ....
+    if(currentAccount?.pin === Number(pinInput.value)){
+        welcomeMessage.textContent = `welcome back ${currentAccount.owner.split(" ")[0]}`;
+    }
+    app.style.opacity=1;
 });
+
+
+//////// userName functionnality :::
+const displayUserName= function(arr){
+    arr.forEach( person =>{
+        person.userName = person.owner.toLowerCase()
+                                        .split(" ")
+                                        .map( ele => ele[0])
+                                        .join("");
+    });
+}
+displayUserName(accounts);
+console.log(accounts)
+/* -------End of Auth Functionnality------- */

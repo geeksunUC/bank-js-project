@@ -293,3 +293,8 @@ color: #ba3f3f;
     position: absolute;
     left:46%
 }
+
+main{
+    transition: 15s;
+    opacity: 0;
+}
